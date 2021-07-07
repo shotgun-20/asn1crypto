@@ -1086,6 +1086,8 @@ class PublicKeyInfo(Sequence):
             'x448': (OctetBitString, None),
             'ed25519': (OctetBitString, None),
             'ed448': (OctetBitString, None),
+            # gostR
+            'id-tc26-gost3410-12-256': (OctetBitString, None),
         }[algorithm]
 
     _spec_callbacks = {
