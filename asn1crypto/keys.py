@@ -671,6 +671,7 @@ class PrivateKeyAlgorithmId(ObjectIdentifier):
         '1.3.101.111': 'x448',
         '1.3.101.112': 'ed25519',
         '1.3.101.113': 'ed448',
+        '1.2.643.7.1': 'id-tc26',
     }
 
 
