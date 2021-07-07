@@ -263,6 +263,8 @@ class SignedDigestAlgorithmId(ObjectIdentifier):
         # RFC 8410 -- https://tools.ietf.org/html/rfc8410
         '1.3.101.112': 'ed25519',
         '1.3.101.113': 'ed448',
+        # gostR
+        '1.2.643.7.1.1.1.1': 'id-tc26-gost3410-12-256',
     }
 
     _reverse_map = {
@@ -291,6 +293,7 @@ class SignedDigestAlgorithmId(ObjectIdentifier):
         'sha3_512_ecdsa': '2.16.840.1.101.3.4.3.12',
         'ed25519': '1.3.101.112',
         'ed448': '1.3.101.113',
+        'id-tc26-gost3410-12-256': '1.2.643.7.1.1.1.1',
     }
 
 
@@ -650,9 +653,11 @@ class EncryptionAlgorithmId(ObjectIdentifier):
         # PKCS#1 v2.2
         '1.2.840.113549.1.1.1': 'rsaes_pkcs1v15',
         '1.2.840.113549.1.1.7': 'rsaes_oaep',
-        # GOST gost-3410-2012
-        '1.2.643.7.1.1.1.1': 'id-tc26-gost3410-12-256',
-        '1.2.643.7.1.1.1.2': 'id-tc26-gost3410-12-512',
+        # GOST gostR
+        '1.2.643.7.1.1.5.1.1': 'id-tc26-cipher-gostr3412-2015-magma-ctracpkm',
+        '1.2.643.7.1.1.5.1.2': 'id-tc26-cipher-gostr3412-2015-magma-ctracpkm-omac',
+        '1.2.643.7.1.1.5.2.1': 'id-tc26-cipher-gostr3412-2015-kuznyechik-ctracpkm',
+        '1.2.643.7.1.1.5.2.2': 'id-tc26-cipher-gostr3412-2015-kuznyechik-ctracpkm-omac ',
     }
 
 
