@@ -650,6 +650,9 @@ class EncryptionAlgorithmId(ObjectIdentifier):
         # PKCS#1 v2.2
         '1.2.840.113549.1.1.1': 'rsaes_pkcs1v15',
         '1.2.840.113549.1.1.7': 'rsaes_oaep',
+        # GOST gost-3410-2012
+        '1.2.643.7.1.1.1.1': 'id-tc26-gost3410-12-256',
+        '1.2.643.7.1.1.1.2': 'id-tc26-gost3410-12-512',
     }
 
 

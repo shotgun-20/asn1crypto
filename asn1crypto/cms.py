@@ -668,6 +668,9 @@ class KeyEncryptionAlgorithmId(ObjectIdentifier):
         '2.16.840.1.101.3.4.1.28': 'aes192_wrap_pad',
         '2.16.840.1.101.3.4.1.45': 'aes256_wrap',
         '2.16.840.1.101.3.4.1.48': 'aes256_wrap_pad',
+        '1.2.643.7.1.1.7': 'id-tc26-wrap',
+        '1.2.643.7.1.1.7.1': 'id-tc26-wrap-gostr3412-2015-magma',
+        '1.2.643.7.1.1.7.2': 'id-tc26-wrap-gostr3412-2015-kuznyechik',
     }
 
     _reverse_map = {
@@ -680,6 +683,9 @@ class KeyEncryptionAlgorithmId(ObjectIdentifier):
         'aes192_wrap_pad': '2.16.840.1.101.3.4.1.28',
         'aes256_wrap': '2.16.840.1.101.3.4.1.45',
         'aes256_wrap_pad': '2.16.840.1.101.3.4.1.48',
+        'id-tc26-wrap': '1.2.643.7.1.1.7',
+        'id-tc26-wrap-gostr3412-2015-magma': '1.2.643.7.1.1.7.1',
+        'id-tc26-wrap-gostr3412-2015-kuznyechik': '1.2.643.7.1.1.7.2',
     }
 
 
