@@ -344,6 +344,7 @@ class SignedDigestAlgorithm(_ForceNullParameters, Sequence):
             'ecdsa': 'ecdsa',
             'ed25519': 'ed25519',
             'ed448': 'ed448',
+            'id-tc26-gost3410-12-256': 'id-tc26-gost3410-12-256',
         }
         if algorithm in algo_map:
             return algo_map[algorithm]
@@ -383,6 +384,7 @@ class SignedDigestAlgorithm(_ForceNullParameters, Sequence):
             'sha512_ecdsa': 'sha512',
             'ed25519': 'sha512',
             'ed448': 'shake256',
+            'id-tc26-gost3410-12-256': 'id-tc26-gost3411-12-256',
         }
         if algorithm in algo_map:
             return algo_map[algorithm]
