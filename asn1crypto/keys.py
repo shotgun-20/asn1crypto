@@ -1034,6 +1034,7 @@ class PublicKeyAlgorithmId(ObjectIdentifier):
         '1.3.101.112': 'ed25519',
         '1.3.101.113': 'ed448',
         '1.2.643.7.1.1.1.1': 'id-tc26-gost3410-12-256',
+        '1.2.643.7.1.1.1.2': 'id-tc26-gost3410-12-512',
         '1.2.643.2.2.19': 'gostR3410-2001',
     }
 
@@ -1089,6 +1090,7 @@ class PublicKeyInfo(Sequence):
             'ed448': (OctetBitString, None),
             # gostR
             'id-tc26-gost3410-12-256': (OctetBitString, None),
+            'id-tc26-gost3410-12-512': (OctetBitString, None),
         }[algorithm]
 
     _spec_callbacks = {

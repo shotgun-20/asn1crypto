@@ -265,6 +265,7 @@ class SignedDigestAlgorithmId(ObjectIdentifier):
         '1.3.101.113': 'ed448',
         # gostR
         '1.2.643.7.1.1.1.1': 'id-tc26-gost3410-12-256',
+        '1.2.643.7.1.1.1.2': 'id-tc26-gost3410-12-512',
         '1.2.643.2.2.19': 'gostR3410-2001',
     }
 
@@ -295,6 +296,7 @@ class SignedDigestAlgorithmId(ObjectIdentifier):
         'ed25519': '1.3.101.112',
         'ed448': '1.3.101.113',
         'id-tc26-gost3410-12-256': '1.2.643.7.1.1.1.1',
+        'id-tc26-gost3410-12-512': '1.2.643.7.1.1.1.2',
         'gostR3410-2001': '1.2.643.2.2.19',
     }
 
@@ -347,6 +349,7 @@ class SignedDigestAlgorithm(_ForceNullParameters, Sequence):
             'ed25519': 'ed25519',
             'ed448': 'ed448',
             'id-tc26-gost3410-12-256': 'id-tc26-gost3410-12-256',
+            'id-tc26-gost3410-12-512': 'id-tc26-gost3410-12-512',
         }
         if algorithm in algo_map:
             return algo_map[algorithm]
@@ -387,6 +390,7 @@ class SignedDigestAlgorithm(_ForceNullParameters, Sequence):
             'ed25519': 'sha512',
             'ed448': 'shake256',
             'id-tc26-gost3410-12-256': 'id-tc26-gost3411-12-256',
+            'id-tc26-gost3410-12-512': 'id-tc26-gost3410-12-512',
         }
         if algorithm in algo_map:
             return algo_map[algorithm]
